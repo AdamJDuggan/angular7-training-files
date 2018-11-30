@@ -1,0 +1,23 @@
+<div class="container-fluid m-4">
+  <h3 class="mb-4 pb-4">Assignment 3: Practicing Directives</h3>
+  <h5>1.Add a button which toggles the display of some text below</h5>
+  <h5>2.Log all button clicks in an array and output that array below</h5>
+  <h5>3. Starting at the 5th log item, give all future logs a blue background (via ngStyle)
+    and white text color(via ngClass).</h5>
+  <div *ngIf="!isCollapsed"><h6>Hidden text</h6></div>
+  <button class="btn btn-large btn-primary mt-2 mb-2" *ngIf="isCollapsed" (click)="toggleCollapse()">Expand</button>
+  <button class="btn btn-large btn-danger mt-2 mb-2" *ngIf="!isCollapsed" (click)="toggleCollapse()">Collapse</button>
+  <h6 >{{count}}</h6>
+  <div
+  *ngFor="let x of count;"
+  [ngStyle] = "{backgroundColor: x >= 5 ? 'blue' : 'white'}"
+  [ngClass]="{'white-text': x >= 5}"
+  >{{x}}</div>
+  <div
+  *ngFor="let x of count;"
+  [ngStyle] = "{backgroundColor: x >= 5 ? 'blue' : 'white'}"
+  [ngClass]="{'white-text': x >= 5}"
+  >{{x}}</div>
+<hr>
+</div>
+

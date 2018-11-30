@@ -1,0 +1,11 @@
+<div class="card blog-tile" [ngClass]="{'fav': post.isFav}">
+  <div class="card-body">
+    <div class="card-title text-bold">{{post.title}}</div>
+    <p
+    class="card-text text-italic"
+    (click)="showFullSummary()"
+    >{{post.summary}}</p>
+    <a href="#" class="btn btn-primary btn-large mr-3">Read</a>
+    <a href="#" (click)= "toggleFav()" class="btn btn-info btn-large">Faveorite</a>
+  </div>
+</div>

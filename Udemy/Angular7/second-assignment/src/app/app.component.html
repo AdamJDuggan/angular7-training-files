@@ -1,0 +1,12 @@
+<h3>1. Add an input field which updates a property (username) via two way binding.
+</h3>
+<input type="text" class="form-control" [(ngModel)]="username">
+<h3>2. Output the username property via string interperlation</h3>
+<h4>{{username}}</h4>
+<h3>3. Add a button which may only be clicked if the username is not an empty string</h3>
+<h3>4. Upon clicking the button the username should be reset to 'Hello'</h3>
+<button [disabled]="username.length < 1" (click)="emptyString()"></button>
+
+
+
+

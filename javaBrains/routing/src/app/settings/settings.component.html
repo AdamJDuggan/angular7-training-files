@@ -1,0 +1,5 @@
+<h1>Settings menu</h1>
+<a *ngFor="let route of routes" [routerLink]="route.url">{{route.linkName}}</a><br>
+<router-outlet></router-outlet>
+
+

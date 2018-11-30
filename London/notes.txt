@@ -1,0 +1,28 @@
+Package.json
+was created by the Angular CI. It describes allthe files which need
+to be downloaded by the NPM. Within this;
+
+Angualr.json
+decides al the default settings. You can change these.
+
+src/html
+is the file which will run. It contains an instance of the
+very top level which in this case is called weather.
+
+src/main.ts
+defines the name of the top level Angular module file which in
+our case is called AppModule.
+
+src/app/app.module.ts
+this defines AppModule. It names all the components in our App.
+Loads HTML and CSS. 
+
+
+
+A class is a blueprint for creating objects with specific
+functions and properties already attached to it.
+
+Components let us create a new HTML language and they are how we structure Angular applications.
+HTML comes with a bunch of pre-built tags like <input> and <form> which look and behave a certain
+way. In Angular we create new custom tags with their own look and behaviour. An Angular application is therefore just a set of custom tags that interact with each other, we call
+these tags Components.

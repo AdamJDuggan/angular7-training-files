@@ -1,0 +1,24 @@
+<div class="row text-center ">
+  <ul>
+    <li 
+    class="product"
+    [class.selected] = "selectProduct && selectProduct.name === product.name" 
+    *ngFor="let product of products">
+
+        <input type="text" [(ngModel)] = "product.name"/>
+        <p (click)="onSelectProduct(product)">Name: {{product.name | uppercase}}</p>
+    </li>
+  </ul>
+</div>
+<hr>
+
+<div class="row text-center m-4">
+  <h2>Selected Product:</h2>
+  <div class="container-fluid mx-3">
+    <p>Name:  {{selectProduct.name}}</p>
+    <p>Id: {{selectProduct.id}}</p>
+    <p>Price: {{selectProduct.price}}</p>
+
+  </div>
+</div>
+  

@@ -1,0 +1,17 @@
+<a href="#" (click)="expandAll()">Expand all</a>
+<app-blog-post-title
+#title
+*ngFor = "let x of blogPosts[currentPage]"
+[post]="x"></app-blog-post-title>
+
+<!-- <app-blog-post-title [post] = "blogPosts[0][0]"
+#title>
+</app-blog-post-title> -->
+
+
+<app-pageinator
+[numberOfPages]="blogPosts.length"
+(pageNumberClick)="updatePage($event)">
+</app-pageinator>
+
+

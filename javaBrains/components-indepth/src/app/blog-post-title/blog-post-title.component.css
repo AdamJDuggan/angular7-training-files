@@ -1,0 +1,11 @@
+.blog-btn{
+  font-weight: 900;
+}
+/* Style one level down. Style component itself not outer markup */
+:host{
+  margin: 20px;
+}
+
+.fav{
+  background-color: lightgrey;
+}

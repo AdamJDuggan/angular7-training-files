@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@font-face {
+  font-family: raleway, sans-serif;
+}
+
+html {font-family: raleway, sans-serif;}
+
+
+h1, h2, h3{
+  font-weight: bold;
+  color: white;
+
+}
+
+.jumbotron{
+  background-color: #5b2d0e;
+}

@@ -1,0 +1,12 @@
+<div class="jumbotron m-2">
+<h3 class="mb-4 pb-4">Assignment 2: Data binding</h3>
+<h5>1. Add an input field which updates a property (username) via two way binding.</h5>
+<div class="col md-4">
+<input type="text" class="form-control" placeholder="First name" [(ngModel)]="username">
+</div>
+<h5>2. Output the username property via string interperlation.</h5>
+<h5 class="text-danger">{{username}}</h5>
+<h5>3. Add a button which may only be clicked if the username is not an empty string. Upon clicking the button the username should be reset to a message.</h5>
+<button class= "btn btn-primary btn-large" [disabled]="username.length < 1" (click)="emptyString()">Click to reset</button>
+</div>
+<hr>

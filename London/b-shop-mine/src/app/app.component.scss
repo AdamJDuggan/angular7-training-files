@@ -1,0 +1,61 @@
+
+$brandColor : darkslategrey;
+$brandFont : 'Gill Sans';
+
+.shop{
+  font-family: $brandFont;
+  font-size:1.25rem;
+  color:$brandColor;
+  text-align: center
+}
+
+span{
+  color:forestgreen;
+  padding-left: 1rem;
+}
+
+.shelf{
+  display: flex; /* Turns on FlexBox layout system */
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*
+  SPECIFICITY : order/importance of CSS rules
+*/
+
+.item{
+  padding: 0.25rem;
+  border:1px solid grey;
+  margin:0.25rem;
+  width:100px;
+  cursor: pointer;
+}
+
+.basket{
+  border:2px dashed darkslategrey;
+  background-color: beige;
+  cursor:default;
+  transform: rotate(4deg) scale(0.75);
+}
+
+
+.price{
+  color:orangered;
+}
+
+.button{
+  background-color: orangered;
+  color:white;
+  padding:0.5rem;
+  text-align: center;
+  cursor: pointer;
+  width:128px;
+  margin:1rem auto;
+}
+
+.outstock{
+  opacity: 0.24;
+  cursor: default;
+}

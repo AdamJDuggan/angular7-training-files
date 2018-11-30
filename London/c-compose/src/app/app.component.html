@@ -1,0 +1,22 @@
+  <section class="shop">
+  <h2>{{ shop }}</h2>
+  <p>{{ getAddr() }}</p>
+
+<section class="shelf">
+    <app-item [item] = "fv" *ngFor="let fv of fruitVeg" (selectItem)="buyItem(fv)"></app-item>
+</section>
+  <!-- ========================================================= -->
+  <hr/>
+  <section class="shelf">
+      <section *ngFor="let item of basket" class="item basket" (click)="removeItem(item)">
+          <p>{{ item.name }}</p>
+          <p class="price">{{ item.price | currency : "GBP" }}</p>
+      </section>
+  </section>
+  <!-- ========================================================= -->
+
+  <p>{{ getTotal() | currency : "GBP" }}</p>
+
+  <p class="button" (click)="empty()">EMPTY</p>
+
+</section>
